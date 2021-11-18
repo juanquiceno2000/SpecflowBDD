@@ -42,11 +42,16 @@
 
   <ItemGroup>
     <Folder Include="Hooks\" />
-    <Folder Include="PageObject\" />
     <Folder Include="POCO\JsonBodyRequests\" />
     <Folder Include="POCO\JsonModel\" />
     <Folder Include="POCO\XmlBodyRequests\" />
     <Folder Include="POCO\XmlModel\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Features\login.feature.cs">
+      <DependentUpon>Login.feature</DependentUpon>
+    </Compile>
   </ItemGroup>
 
 </Project>
