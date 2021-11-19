@@ -42,7 +42,6 @@
 
   <ItemGroup>
     <Folder Include="Hooks\" />
-    <Folder Include="POCO\JsonBodyRequests\" />
     <Folder Include="POCO\JsonModel\" />
     <Folder Include="POCO\XmlBodyRequests\" />
     <Folder Include="POCO\XmlModel\" />
