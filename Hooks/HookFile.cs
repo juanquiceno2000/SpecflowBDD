@@ -46,6 +46,7 @@ namespace AutomationFramework.Hooks
         }
 
         [BeforeScenario]
+        [Obsolete]
         public void BeforeScenario()
         {
             StartNavigation();

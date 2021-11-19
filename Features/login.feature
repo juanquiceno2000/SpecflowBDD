@@ -4,7 +4,7 @@
   to access the features available
 
 
-  Scenario: Login Failed due to incorrect UserName
+  Scenario: 00) Login Failed due to incorrect UserName
     Given a user in the Login Page
     When the user enters an incorrect UserName
     And the user enters expected Password
@@ -12,7 +12,7 @@
     Then the system throws the error "Epic sadface: Username and password do not match any user in this service" message
 
 
-  Scenario: Login Failed due to incorrect Password
+  Scenario: 01) Login Failed due to incorrect Password
     Given a user in the Login Page
     When the user enters expected UserName
     And the user enters an incorrect Password
@@ -20,7 +20,7 @@
     Then the system throws the error "Epic sadface: Username and password do not match any user in this service" message
 
 
-  Scenario: Validate Mandatory UserName Field
+  Scenario: 02) Validate Mandatory UserName Field
     Given a user in the Login Page
     When the user doesn't enter UserName in the Username field
     And the user enters expected Password
@@ -28,7 +28,7 @@
     Then the system throws the error "Epic sadface: Username is required" message
 
 
-  Scenario: Validate Mandatory Password Field
+  Scenario: 03) Validate Mandatory Password Field
     Given a user in the Login Page
     When the user enters expected UserName
     And the user doesn't enter Password in the Password field
@@ -36,7 +36,7 @@
     Then the system throws the error "Epic sadface: Password is required" message
 
 
-  Scenario: Login Successfully
+  Scenario: 04) Login Successfully
     Given a user in the Login Page
     When the user enters expected UserName
     And the user enters expected Password

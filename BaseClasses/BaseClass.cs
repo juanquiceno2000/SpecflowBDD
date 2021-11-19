@@ -50,16 +50,14 @@ namespace AutomationFramework.BaseClasses
             return driver;
         }
 
+        [Obsolete]
         private static ChromeDriver GetChromeDriver()
         {
             ChromeDriver driver = new ChromeDriver(GetChromeOptions());
             return driver;
         }
 
-        public static void InitWebdriver(TestContext tc)
-        {
-        }
-
+        [Obsolete]
         public void StartNavigation()
         {
             switch (ConfigClass.browser)

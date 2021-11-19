@@ -29,7 +29,7 @@ namespace SpecflowBDD.Features
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "login.feature"
+#line 1 "Login.feature"
 #line hidden
         
         public virtual Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
@@ -92,13 +92,13 @@ namespace SpecflowBDD.Features
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Login Failed due to incorrect UserName")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("00) Login Failed due to incorrect UserName")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Login to the App")]
-        public virtual void LoginFailedDueToIncorrectUserName()
+        public virtual void _00LoginFailedDueToIncorrectUserName()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login Failed due to incorrect UserName", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("00) Login Failed due to incorrect UserName", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 7
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -140,13 +140,13 @@ namespace SpecflowBDD.Features
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Login Failed due to incorrect Password")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("01) Login Failed due to incorrect Password")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Login to the App")]
-        public virtual void LoginFailedDueToIncorrectPassword()
+        public virtual void _01LoginFailedDueToIncorrectPassword()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login Failed due to incorrect Password", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01) Login Failed due to incorrect Password", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 15
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -188,13 +188,13 @@ namespace SpecflowBDD.Features
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Validate Mandatory UserName Field")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("02) Validate Mandatory UserName Field")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Login to the App")]
-        public virtual void ValidateMandatoryUserNameField()
+        public virtual void _02ValidateMandatoryUserNameField()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate Mandatory UserName Field", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02) Validate Mandatory UserName Field", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 23
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -235,13 +235,13 @@ namespace SpecflowBDD.Features
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Validate Mandatory Password Field")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("03) Validate Mandatory Password Field")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Login to the App")]
-        public virtual void ValidateMandatoryPasswordField()
+        public virtual void _03ValidateMandatoryPasswordField()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate Mandatory Password Field", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03) Validate Mandatory Password Field", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 31
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -282,13 +282,13 @@ namespace SpecflowBDD.Features
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Login Successfully")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("04) Login Successfully")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Login to the App")]
-        public virtual void LoginSuccessfully()
+        public virtual void _04LoginSuccessfully()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Login Successfully", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04) Login Successfully", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 39
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
