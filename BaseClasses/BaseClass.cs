@@ -4,6 +4,7 @@ using AutomationFramework.Resources;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using SeleniumWebdriver.ComponentHelper;
 
@@ -13,11 +14,28 @@ namespace AutomationFramework.BaseClasses
 
     public class BaseClass
     {
-        private static FirefoxOptions GetFirefoxptions()
+        private static FirefoxOptions GetFirefoxOptions()
         {
             FirefoxOptions options = new FirefoxOptions();
-            FirefoxProfileManager manager = new FirefoxProfileManager();
+            options.AddArgument("start-maximized");
             return options;
+        }
+
+        private static EdgeOptions GetEdgeOptions()
+        {
+            EdgeOptions options = new EdgeOptions();
+            options.AddArgument("start-maximized");
+            return options;
+        }
+
+        [Obsolete]
+        private static ChromeOptions GetChromeOptions()
+        {
+            ChromeOptions option = new ChromeOptions();
+            option.AddAdditionalCapability("useAutomationExtension", false);
+            option.AddArgument("start-maximized");
+            //option.AddArgument("--headless");
+            return option;
         }
 
         private static FirefoxOptions GetOptions()
@@ -32,21 +50,16 @@ namespace AutomationFramework.BaseClasses
             return options;
         }
 
-        [Obsolete]
-        private static ChromeOptions GetChromeOptions()
-        {
-            ChromeOptions option = new ChromeOptions();
-            option.AddAdditionalCapability("useAutomationExtension", false);
-            option.AddArgument("start-maximized");
-            //option.AddArgument("--headless");
-            return option;
-        }
-
 
         private static FirefoxDriver GetFirefoxDriver()
         {
-            FirefoxOptions options = new FirefoxOptions();
-            FirefoxDriver driver = new FirefoxDriver(GetFirefoxptions());
+            FirefoxDriver driver = new FirefoxDriver(GetFirefoxOptions());
+            return driver;
+        }
+
+        private static EdgeDriver GetEdgeDriver()
+        {
+            EdgeDriver driver = new EdgeDriver(GetEdgeOptions());
             return driver;
         }
 
@@ -64,11 +77,14 @@ namespace AutomationFramework.BaseClasses
             {
                 case "Firefox":
                     ObjectRepository.Driver = GetFirefoxDriver();
-
                     break;
 
                 case "Chrome":
                     ObjectRepository.Driver = GetChromeDriver();
+                    break;
+
+                case "Edge":
+                    ObjectRepository.Driver = GetEdgeDriver();
                     break;
 
                 default:
@@ -81,7 +97,7 @@ namespace AutomationFramework.BaseClasses
             ObjectRepository.Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(ConfigClass.PageLoadTimeout);
             //Navigate to the page
             NavigationHelper.NavigateToUrl(ConfigClass.website);
-            BrowserHelper.Maximize();
+            //BrowserHelper.Maximize();
         }
 
         public void CleanUp()
