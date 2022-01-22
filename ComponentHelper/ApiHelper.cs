@@ -26,13 +26,13 @@ namespace SeleniumWebdriver.ComponentHelper
             return client;
         }
 
-        public static IRestResponse executePayload(RestClient client, IRestRequest request)
+        public static IRestResponse executePayload(RestClient client, RestRequest request)
         {
             IRestResponse response = client.Execute(request);
             return response;
         }
 
-        public static int getResponseCode(IRestResponse response)
+        public static int getResponseCode(RestResponse response)
         {
             HttpStatusCode statusCode = response.StatusCode;
             int numericStatusCode = (int)statusCode;
