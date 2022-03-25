@@ -9,7 +9,7 @@ using TechTalk.SpecFlow;
 namespace AutomationFramework.Hooks
 {
     [Binding]
-    public sealed class Ejecucion : BaseClasses.BaseClass
+    public sealed class HookFile : BaseClasses.BaseClass
     {
         private ScenarioContext _scenarioContext;
         private FeatureContext _featureContext;
@@ -17,7 +17,7 @@ namespace AutomationFramework.Hooks
         private static ExtentTest scenario;
         private static ExtentReports extent;
 
-        public Ejecucion(ScenarioContext scenarioContext, FeatureContext featureContext)
+        public HookFile(ScenarioContext scenarioContext, FeatureContext featureContext)
         {
             _scenarioContext = scenarioContext;
             _featureContext = featureContext;
